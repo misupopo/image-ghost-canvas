@@ -1,0 +1,44 @@
+{
+  "name": "image-ghost-canvas",
+  "version": "1.0.6",
+  "description": "image resize, canvas resize",
+  "keywords": [
+    "image",
+    "resize",
+    "trimming",
+    "keeping aspect ratio",
+    "aspect ratio"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run tsc && karma start karma.conf.js",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/misupopo/image-ghost-canvas.git"
+  },
+  "author": "misupopo <kokorononakaniitumo@yahoo.co.jp>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/misupopo/image-ghost-canvas/issues"
+  },
+  "homepage": "https://github.com/misupopo/image-ghost-canvas#readme",
+  "dependencies": {
+    "typescript": "^2.9.2"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.8.8",
+    "jasmine-core": "^3.1.0",
+    "jasmine-spec-reporter": "^4.2.1",
+    "karma": "^2.0.4",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage-istanbul-reporter": "^2.0.1",
+    "karma-jasmine": "^1.1.2",
+    "karma-jasmine-html-reporter": "^1.1.0",
+    "karma-typescript-preprocessor": "^0.3.1",
+    "karma-webpack": "^3.0.0",
+    "webpack": "^4.12.2"
+  }
+}
