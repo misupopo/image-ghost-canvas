@@ -15,9 +15,9 @@ public imageGhostCanvas = new ImageGhostCanvas(option);
 
 #### Resize image
 ```js
-imageGhostCanvas.resizeImage(base64);
+imageGhostCanvas.resizeImage(data);
 ```
-`base64` \<encoded data> you can git encoded image data that its type jpeg or ping.
+`data` \<[data URI](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs)> you can git encoded image data that its type jpeg or ping. 
 
 `Return:` \<Promise>
 
