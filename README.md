@@ -1,5 +1,5 @@
-# image-canvas
-image-canvas is a tool for image you want to trimming cut on Browser.
+# image-ghost-canvas
+image-ghost-canvas is a tool for image you want to trimming cut on Browser.
 for example if you want to cut with keeping the image's aspect ratio, I recommend this tool for that.
 
 ### Demo
@@ -30,7 +30,7 @@ imageGhostCanvas.resizeImage(imageData)
 });
 
 // error
-await imageGhostCanvas.resizeImage(imageData)
+imageGhostCanvas.resizeImage(imageData)
 .catch((error) => {
     // when it result error, do something for error.
 }); 
