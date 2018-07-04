@@ -14,23 +14,25 @@ public imageGhostCanvas = new ImageGhostCanvas(option);
 * size \<Number> Size for trimming image size.
 
 #### Resize image
-resizeImage method results image's data base64 url.
 ```js
-imageGhostCanvas.resizeImage();
+imageGhostCanvas.resizeImage(base64);
 ```
+`base64` \<encoded data> you can git encoded image data that its type jpeg or ping.
+
+`Return:` \<Promise>
 
 ### Example
 ```js
 // success
-const imageSrc = await imageGhostCanvas.resizeImage(imageData);
+imageGhostCanvas.resizeImage(imageData)
+.then((data) => {
+    imageSrc = data;
+});
 
 // error
 await imageGhostCanvas.resizeImage(imageData)
 .catch((error) => {
-    if (error) {
-        // when it result error, write something for error.
-        return;
-    }
+    // when it result error, do something for error.
 }); 
 
 ```
