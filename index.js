@@ -22,8 +22,7 @@ class ImageGhostCanvas {
                     ctx.drawImage(image, imgPos, 0, this.size * imgRate, this.size);
                 }
                 else {
-                    imgPos = Math.floor((this.size - (this.size / imgRate)) / 2);
-                    ctx.drawImage(image, 0, imgPos, this.size, this.size / imgRate);
+                    ctx.drawImage(image, 0, 0, this.size, this.size / imgRate);
                 }
                 resolve(canvas.toDataURL());
             };

@@ -15,6 +15,22 @@ describe('ImageGhostCanvas', () => {
             });
     });
 
+    it('should be equal value with vertical', async(done) => {
+        await imageGhostCanvas.resizeImage(urlData.imageSrcVertical)
+            .then((file: string) => {
+                expect(urlData.encodedImageSrcVertical).toEqual(file);
+                done();
+            });
+    });
+
+    it('should be equal value with horizontal', async(done) => {
+        await imageGhostCanvas.resizeImage(urlData.imageSrcHorizontal)
+            .then((file: string) => {
+                expect(urlData.encodedImageSrcHorizontal).toEqual(file);
+                done();
+            });
+    });
+
     describe('Error', () => {
         it('should be error because of text prefix', async(done) => {
             await imageGhostCanvas.resizeImage('data:text/plain;base64,44OV44Kh44Kk44OI44Gg44KI44Gj77yBCgo=')
